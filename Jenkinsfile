@@ -4,9 +4,10 @@ pipeline {
         
         stage('Build') {
             steps {
-               echo " Hello World"
-               python setup.py build // Build the project
-               
+                script{
+                    echo " Hello World"
+                    python setup.py build // Build the project
+                }
             }
         }    
     }
