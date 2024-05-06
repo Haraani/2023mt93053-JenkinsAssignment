@@ -5,7 +5,7 @@ pipeline {
         stage('Build') {
             steps {
                echo " Hello World"
-               sh 'python setup.py build' // Build the project
+               python setup.py build // Build the project
                
             }
         }    
