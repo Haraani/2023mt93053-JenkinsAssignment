@@ -2,18 +2,11 @@ pipeline {
     agent any
 
     stages {
-        stage('Checkout') {
-            steps {
-                checkout scm
-            }
-        }
-
+        
         stage('Build') {
             steps {
-                // Commands to build your project
-                echo 'Building project...'
-                sh 'python setup.py build' // Replace with your build command
+                python setup.py build // Build the project
             }
-        }
+        }    
     }
 }
