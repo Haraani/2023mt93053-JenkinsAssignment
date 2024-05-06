@@ -4,9 +4,7 @@ pipeline {
         
         stage('Build') {
             steps {
-               script{
-                     python setup.py build // Build the project
-               }
+               python setup.py build // Build the project
             }
         }    
     }
