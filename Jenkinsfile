@@ -1,4 +1,4 @@
-nspipeline {
+pipeline {
      agent any
      stages {
         
