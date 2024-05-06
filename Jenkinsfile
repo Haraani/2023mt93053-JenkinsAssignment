@@ -5,7 +5,7 @@ nspipeline {
         stage('Build') {
             steps {
                 script{
-                    echo "Jenkins Hello World"
+                    echo "Jenkinsis saying Hello World"
                     //python setup.py build // Build the project
                 }
             }
